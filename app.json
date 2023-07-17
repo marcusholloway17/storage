@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dokku": {
+      "predeploy": "npm i -g sequelize-cli && sequelize-cli db:create",
+      "postdeploy": "sequelize-cli db:migrate"
+    }
+  }
+}
